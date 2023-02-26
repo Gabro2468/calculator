@@ -1,0 +1,42 @@
+/* arcade font-style import */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    background-color: rgb(218, 137, 32);
+    margin: 0;
+}
+
+/* styles for title */
+#title{
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: 'VT323',monospace;
+    margin: 0;
+    padding: 2rem 0;
+}
+
+/* styles for calculator-section */
+#calculator{
+    box-sizing: border-box;
+    border: solid black 0.5rem;
+    border-radius: 1.2rem;
+    width: 25rem;
+    height: 30rem;
+    margin: 1rem auto;
+    background-color: rgb(145, 145, 145);
+}
+
+/* styles for footer */
+footer{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: end;
+    color: azure;
+    font-size: 1rem;
+}
