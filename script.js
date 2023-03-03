@@ -30,3 +30,16 @@ for(let i=0; i<=10; i++){
         screen.innerHTML = a
     })
 }
+
+const divideOperator = document.querySelector("#divide")
+const multiplyOperator = document.querySelector("#multiply")
+const substractOperator = document.querySelector("#substract")
+const addOperator = document.querySelector("#add")
+const equalOperator = document.querySelector("#equal")
+let operator = ""
+ 
+divideOperator.addEventListener("click", () => {
+    operator = "/"
+    divideOperator.target.style.backgroundColor = 'orange'
+    divideOperator.style.color = 'azure'
+})
