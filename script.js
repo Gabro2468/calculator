@@ -96,3 +96,42 @@ equalOperator.addEventListener("click", () => {
     multiplyOperator.className = "button-right"
     divideOperator.className = "button-right" 
 })
+
+// Adding event listeners for AC and pos/neg
+const clear = document.querySelector("#AC")
+const opposite = document.querySelector("#opposite")
+
+clear.addEventListener("click", () => {
+    operator = ""
+    score = 0
+    numberA = ""
+    numberB = ""
+    screen.innerHTML = "0"
+    addOperator.className = "button-right";
+    substractOperator.className = "button-right"
+    multiplyOperator.className = "button-right"
+    divideOperator.className = "button-right" 
+})
+
+opposite.addEventListener("click", () => {
+    if (operator === ""){
+        if(numberA[0] === "-"){
+            numberA = numberA.slice(1,)
+            screen.innerHTML = numberA
+        }
+        else{
+            numberA = "-" + numberA 
+            screen.innerHTML = numberA
+        }
+    }
+    else{
+        if(numberB[0] === "-"){
+            numberB = numberB.slice(1,)
+            screen.innerHTML = numberB
+        }
+        else{
+            numberB += "-" + numberB
+            screen.innerHTML = numberB
+        }
+    }
+})
