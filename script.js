@@ -51,6 +51,7 @@ const multiplyOperator = document.querySelector("#multiply")
 const substractOperator = document.querySelector("#substract")
 const addOperator = document.querySelector("#add")
 const equalOperator = document.querySelector("#equal")
+const percentOperator = document.querySelector("#percent")
 let operator = ""
 let score = 0
  
@@ -95,6 +96,17 @@ equalOperator.addEventListener("click", () => {
     substractOperator.className = "button-right"
     multiplyOperator.className = "button-right"
     divideOperator.className = "button-right" 
+})
+
+percentOperator.addEventListener("click", () => {
+    if (operator === ""){
+        numberA /= 100
+        screen.innerHTML = numberA 
+    }
+    else{
+       numberB /= 100
+       screen.innerHTML = numberB
+    }
 })
 
 // Adding event listeners for AC and pos/neg
